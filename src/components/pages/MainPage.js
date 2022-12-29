@@ -5,7 +5,7 @@ import CharSearchForm from "../formChar/CharSearchForm";
 import { useState } from 'react';
 import ErrorBoundary from "../errorBoundary/ErrorBoundary"
 
-import decoration from '../../resources/img/vision.png';
+//import decoration from '../../resources/img/vision.png';
 
 const MainPage = () => {
    const [selectedChar, setChar] = useState(null) 
@@ -29,7 +29,7 @@ const MainPage = () => {
                <CharSearchForm/>
             </div>
          </div>
-         <img className="bg-decoration" src={decoration} alt="vision"/>
+         {/*<img className="bg-decoration" src={decoration} alt="vision"/>*/}
       </>
    )
 }

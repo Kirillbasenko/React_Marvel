@@ -5,4 +5,4 @@ import SingleComicPage from "./singleComicPage/SingleComicPage";
 import SinglePage from "./SinglePage";
 import SingleCharPage from "./singleCharPage/SingleCharPage";
 
-export{MainPage, ComicsPage, Page404, SingleComicPage, SinglePage, SingleCharPage}
+export{MainPage, ComicsPage,  SingleComicPage, SinglePage, SingleCharPage}

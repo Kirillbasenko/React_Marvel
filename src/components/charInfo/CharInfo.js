@@ -35,7 +35,7 @@ const CharInfo = (props) => {
         const spinner = loading ? <Spinner/> : null;
         const content = !(loading || error || !char) ? <View char={char}/> : null;
         return (
-            <div style={{"background-color": content ? "rgb(92, 1, 1" : null}} className="char__info">
+            <div style={{"background-color": content ? null : null}} className="char__info">
                     {skeleton}
                     {errorMessage}
                     {spinner}

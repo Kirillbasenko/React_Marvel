@@ -50,12 +50,7 @@ input::-webkit-inner-spin-button {
 .wrraper{
     //background-image: linear-gradient(to right bottom, #760000, #5c030f, #410913, #250a0f, #000000);
     background-image: linear-gradient(to right bottom, #dc0000, #a9001d, #720621, #3b0e1a, #000000);
-    .bg-decoration {
-        position: absolute;
-        right: -50px;
-        top: 970px;
-        z-index: -2;
-    }
+    
 }
 
 .app {
@@ -64,11 +59,6 @@ input::-webkit-inner-spin-button {
     padding: 50px 0px 50px 0px;
     position: relative;
     z-index: 3
-}
-@media(max-width: 1200px){
-    .app{
-        padding: 50px 20px 50px 50px;
-    }
 }
 
 main {
