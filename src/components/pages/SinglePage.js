@@ -5,7 +5,7 @@ import useMarvelService from '../marvelServises/MarvelServises';
 import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import AppBanner from "../appBanner/AppBanner";
-import SingleCharPage from './SingleCharPage';
+import SingleCharPage from './singleCharPage/SingleCharPage';
 
 const SinglePage = () => {
         const {id} = useParams();

@@ -47,16 +47,27 @@ input::-webkit-inner-spin-button {
     margin: 0; 
 }
 
-.app {
-    width: 1100px;
-    margin: 0 auto;
-    padding: 50px 0px 50px 0px;
-    position: relative;
+.wrraper{
+    //background-image: linear-gradient(to right bottom, #760000, #5c030f, #410913, #250a0f, #000000);
+    background-image: linear-gradient(to right bottom, #dc0000, #a9001d, #720621, #3b0e1a, #000000);
     .bg-decoration {
         position: absolute;
         right: -50px;
         top: 970px;
-        z-index: -1;
+        z-index: -2;
+    }
+}
+
+.app {
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    position: relative;
+    z-index: 3
+}
+@media(max-width: 1200px){
+    .app{
+        padding: 50px 20px 50px 50px;
     }
 }
 

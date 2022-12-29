@@ -1,16 +1,15 @@
 @import '../../style/variables.scss';
 
 .char {
-   
     &__search {
-      
         &-form {
+            border-radius: 20px;
             padding: 25px;
             margin-top: 30px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
             position: relative;
             z-index: 5;
-            background-color: #fff;
+            background-color: rgb(92, 1, 1);
         }
         &-label {
             display: block;
@@ -18,10 +17,12 @@
             font-size: 18px;
             line-height: 24px;
             color: #000;
+            color: rgb(243, 241, 241);
         }
         &-wrapper {
             margin-top: 15px;
             display: flex;
+            
             justify-content: space-between;
             align-items: center;
             input {
@@ -30,6 +31,7 @@
                 height: 38px;
                 border: none;
                 background: #FFFFFF;
+                margin-right: 15px;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 font-size: 14px;
             }
@@ -50,5 +52,61 @@
             line-height: 24px;
             color: #03710E;
         }
+    }
+}
+
+@media(max-width: 1200px){
+    .char{
+        &__search{
+            &-form{
+                max-width: 350px;
+            }
+            
+        }
+        
+    }
+}
+
+@media(max-width: 992px){
+    .char{
+        &__search{
+            &-wrapper {
+            flex-direction: column;
+            input {
+                padding: 0 10px;
+                width: 220px;
+                height: 38px;
+                border: none;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        }
+            
+        }
+        
+    }
+}
+
+@media(max-width: 768px){
+    .char{
+        &__search{
+            &-wrapper {
+            flex-direction: column;
+            input {
+                padding: 0 10px;
+                width: 150px;
+                height: 38px;
+                border: none;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        }
+            
+        }
+        
     }
 }

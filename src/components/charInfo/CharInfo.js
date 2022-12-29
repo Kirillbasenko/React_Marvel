@@ -1,5 +1,4 @@
 import Spinner from '../spinner/Spinner';
-import { Transition } from 'react-transition-group';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import { useState, useEffect } from 'react';
 import useMarvelService from '../marvelServises/MarvelServises';
@@ -36,7 +35,7 @@ const CharInfo = (props) => {
         const spinner = loading ? <Spinner/> : null;
         const content = !(loading || error || !char) ? <View char={char}/> : null;
         return (
-            <div className="char__info">
+            <div style={{"background-color": content ? "rgb(92, 1, 1" : null}} className="char__info">
                     {skeleton}
                     {errorMessage}
                     {spinner}

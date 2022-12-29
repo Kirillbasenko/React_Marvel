@@ -1,6 +1,7 @@
-@import '../../style/variables.scss';
+@import '../../../style/variables.scss';
 
 .single-comic {
+   min-height: 900px;
    margin-top: 50px;
    display: grid;
    grid-template-columns: 293px 550px auto;
@@ -14,10 +15,12 @@
       font-weight: bold;
       font-size: 22px;
       line-height: 29px;
+      color: rgb(224, 224, 224);;
    }
    &__descr {
       font-size: 18px;
       line-height: 24px;
       margin-top: 25px;
+      color: rgb(224, 224, 224);
    }
 }

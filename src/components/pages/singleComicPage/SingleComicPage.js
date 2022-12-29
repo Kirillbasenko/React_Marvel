@@ -1,8 +1,8 @@
 import './singleComicPage.scss';
-import Spinner from '../spinner/Spinner';
-import ErrorMessage from '../errorMessage/ErrorMessage';
+import Spinner from '../../spinner/Spinner';
+import ErrorMessage from '../../errorMessage/ErrorMessage';
 import { useState, useEffect } from 'react';
-import useMarvelService from '../marvelServises/MarvelServises';
+import useMarvelService from '../../marvelServises/MarvelServises';
 import { Link, useParams } from 'react-router-dom';
 
 const SingleComicPage = () => {
@@ -49,7 +49,7 @@ const View = ({comic}) => {
             <p className="single-comic__descr">{description}</p>
             <p className="single-comic__descr">{pageCount}</p>
             <p className="single-comic__descr">Language: {language}</p>
-            <div className="single-comic__price">{price}</div>
+            <div className="single-comic__price">{description.match(/\d\.\d\d/i)[0]}$</div>
          </div>
          <Link to="/comics" className="single-comic__back">Back to all</Link>
       </div>
