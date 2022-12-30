@@ -40,7 +40,7 @@ const SingleComicPage = () => {
 
 const View = ({comic}) => {
    const {title, description, pageCount, language, thumbnail, price} = comic
-
+   //description.match(/\d\.\d\d/i)[0]
    return(
       <div className="single-comic">
          <img src={thumbnail} alt={title} className="single-comic__img"/>
@@ -49,7 +49,7 @@ const View = ({comic}) => {
             <p className="single-comic__descr">{description}</p>
             <p className="single-comic__descr">{pageCount}</p>
             <p className="single-comic__descr">Language: {language}</p>
-            <div className="single-comic__price">{description.match(/\d\.\d\d/i)[0]}$</div>
+            <div className="single-comic__price">{price}</div>
          </div>
          <Link to="/comics" className="single-comic__back">Back to all</Link>
       </div>

@@ -14,7 +14,7 @@ const AppHeader = () => {
                     <li><NavLink 
                     end
                     style={({isActive}) => ({ color: isActive ? "rgb(18, 2, 110)" : "black"})}
-                    to="React_Marvel">Characters</NavLink></li>
+                    to="React_Marvel/">Characters</NavLink></li>
                     /
                     <li><NavLink  
                     style={({isActive}) => ({ color: isActive ? "rgb(18, 2, 110)" : "black"})}
